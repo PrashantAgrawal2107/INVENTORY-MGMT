@@ -1,0 +1,26 @@
+<!-- View/new-product.ejs -->
+<h1 class="mt-5 mb-4 header">Add New Product</h1>
+<%if(errorMessage){%>
+<div class="alert alert-danger" role="alert">
+  <%= errorMessage%>
+</div>
+<%}%>
+<form action="/" method="post">
+<div class="mb-3">
+    <label for="name" class="form-label">Product Name</label>
+    <input type="text" class="form-control" id="name" name="name">
+  </div>
+  <div class="mb-3">
+    <label for="desc" class="form-label">Product Description</label>
+    <textarea class="form-control" id="desc" rows="3" name="desc" required></textarea>
+  </div>
+  <div class="mb-3">
+    <label for="price" class="form-label">Price</label>
+    <input type="number" class="form-control" id="price" name="price" required>
+  </div>
+  <div class="mb-3">
+    <label for="imageUrl" class="form-label">Image URL</label>
+    <input type="text" class="form-control" id="imageUrl" name="imageUrl" required>
+  </div>
+  <button type="submit" class="btn btn-primary">Add Product</button>
+</form>
