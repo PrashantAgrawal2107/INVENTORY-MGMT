@@ -1,0 +1,3 @@
+Hello Guyz...
+This is a blog management web app using Node.js , Express and EJS View Engine.
+It is created by me while learning how to build web app using Model-View-Controller.
