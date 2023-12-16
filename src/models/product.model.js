@@ -16,8 +16,14 @@ export default class ProductModel{
     }
 
    
-    static add(productObj){
-       const newProduct = new ProductModel(products.length + 1, productObj.name , productObj.desc , productObj.price , productObj.imageUrl)
+    static add(name , desc , price, imageUrl){
+       const newProduct = new ProductModel(
+        products.length + 1,
+         name ,
+         desc ,
+         price ,
+         imageUrl
+          );
        products.push(newProduct)
     }
     

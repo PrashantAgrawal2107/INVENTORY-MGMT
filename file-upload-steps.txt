@@ -1,0 +1,9 @@
+1. Install multer - Done...npm i multer
+
+2. Changes in View - Done...input type changed to file
+
+3. Middleware to handle files - Done...created config. to store files.
+
+4. Apply that Middleware - Done....added uploadFile middleware to postAddProduct request
+
+5. Update the controller to update urls of images.
